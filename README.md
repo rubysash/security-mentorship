@@ -12,6 +12,12 @@ I'll be adding tutorials, but here are some of the planned ones.
 - UFW Host Firewall
 - Linux Commands
 
+## Raspberry Pi Setup
+
+- Image (noobs/kali)
+- Wifi
+- Power, Cables, Pins, etc
+
 ## Core Network Services
 
 Understanding the protocols that make everything work.
