@@ -1,0 +1,27 @@
+# Git internals
+.git/
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Build output
+public/
+dist/
+build/
+.terraform/
+
+# Large/binary files
+*.zip
+*.tar.gz
+*.pem
+*.key
+*.png
+*.jpg
+*.gif
+*.mp4
+
+# Logs
+*.log
