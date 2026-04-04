@@ -1,6 +1,6 @@
 # Security Learning Labs (2026+)
 
-A comprehensive repository of hands-on tutorials and guides for mastering Cybersecurity, Cloud, DevOps, and AI-assisted Engineering.
+A comprehensive repository of hands-on tutorials and guides for a learning path in Cybersecurity, Cloud, DevOps, and AI-assisted Engineering.
 
 ## Project Structure
 
