@@ -1,161 +1,168 @@
-# Security Learning Labs
+# Security Learning Labs (2026+)
 
-I'll be adding tutorials, but here are some of the planned ones.
+A comprehensive repository of hands-on tutorials and guides for mastering Cybersecurity, Cloud, DevOps, and AI-assisted Engineering.
 
-## Foundational Labs
+## Project Structure
 
-- Markdown
-- HTML
-- Clients and Servers
-- GitHub (the labs and docs setup here)
-- SSH Server
-- UFW Host Firewall
-- Linux Commands
+This is a sampling, it may not be updated with the latest labs.
 
-## Raspberry Pi Setup
+```text
+security-mentorship/
+├── labs/                       # Hands-on tutorials (organized by category)
+│   ├── ai-usage/               # LLMs, prompting, AI-assisted coding, CLIs
+│   ├── cloud/                  # AWS, Azure, GCP labs
+│   ├── devops/                 # CI/CD, IaC (Terraform), hosting (Netlify)
+│   ├── foundational/           # Linux, Git, Markdown, Networking basics
+│   ├── job-hunting/            # Resume building, portfolios, interview prep
+│   ├── linux/                  # Administration, hardening, and shell scripting
+│   ├── network-security/       # Nmap, Burp Suite, Wireshark, pentesting
+│   └── python/                 # Scripting, automation, security tools
+├── reference/                  # Deep-dive conceptual material (by category)
+│   ├── networking/             # Protocols (DNS, DHCP, SMTP, etc.)
+│   ├── security-frameworks/    # NIST, OWASP, MITRE ATT&CK
+│   └── os-internals/           # Linux/Windows deep dives
+├── flashcards/                 # Study material (organized by vendor/cert)
+│   ├── aws/                    # Cloud Practitioner, Security Specialty
+│   ├── azure/                  # AZ-900, AZ-500
+│   ├── comptia/                # Sec+, Net+, CySA+, PenTest+
+│   └── cisco/                  # CCST, CyberOps
+├── images/                     # Global assets (if not lab-specific)
+└── README.md                   # Project index and roadmap
+```
 
-- Image (noobs/kali)
-- Wifi
-- Power, Cables, Pins, etc
+---
 
-## Core Network Services
+## Active Labs (Completed)
 
-Understanding the protocols that make everything work.
+### Foundational
+*   **Networking Foundations:** [labs/foundational/networking-fundamentals/index.md](labs/foundational/networking-fundamentals/index.md) (OSI Model, TCP Handshake, Ports).
+*   **Linux Foundations: The Filesystem:** [labs/foundational/linux-filesystem-basics/index.md](labs/foundational/linux-filesystem-basics/index.md).
+*   **Linux Foundations: The CLI:** [labs/foundational/linux-cli/index.md](labs/foundational/linux-cli/index.md) (Debian & RedHat cheatsheet).
+*   **Git Foundations: Version Control:** [labs/foundational/git-version-control/index.md](labs/foundational/git-version-control/index.md).
 
-### Time
+### AI Usage
+*   **Mastering the Gemini CLI:** [labs/ai-usage/gemini-cli/index.md](labs/ai-usage/gemini-cli/index.md) (Installation, Venv, AI-driven scripts).
+*   **Rapid Website Prototyping & Sales:** [labs/ai-usage/aistudio-website/index.md](labs/ai-usage/aistudio-website/index.md).
+*   **AI Usage Foundations: Power User Edition:** [labs/foundational/ai-usage-fundamentals/index.md](labs/foundational/ai-usage-fundamentals/index.md).
 
-- **NTP (Network Time Protocol)** – Synchronizes clocks across devices; critical for logs, auth, certs
+### Network Security
+*   **Advanced Network Discovery & Diagramming:** [labs/network-security/home-network-discovery/index.md](labs/network-security/home-network-discovery/index.md) (Nmap, Masscan, AI JSON).
 
-### Name Resolution
+### DevOps
+*   **Static Hosting with GitHub and Netlify:** [labs/devops/static-hosting-netlify/index.md](labs/devops/static-hosting-netlify/index.md).
 
-- **DNS (Domain Name System)** – Translates names to IPs
-- **mDNS (Multicast DNS)** – Local network discovery (.local addresses)
+### Job Hunting
+*   **The 'Recruit the Recruiter' Protocol:** [labs/job-hunting/recruit-the-recruiter/index.md](labs/job-hunting/recruit-the-recruiter/index.md).
 
-### IP Address Assignment
+---
 
-- **DHCP (Dynamic Host Configuration Protocol)** – Assigns IPs, gateways, DNS to clients
-- **APIPA** – Self-assigned 169.254.x.x when DHCP fails
+## Planned Labs (Roadmap)
 
-### Email
+This section contains all originally planned labs, sorted by category of things we are planning or considering.  
 
-- **SMTP (Simple Mail Transfer Protocol)** – Sends mail between servers (port 25, 587)
-- **IMAP (Internet Message Access Protocol)** – Retrieves mail, keeps on server (port 143, 993)
-- **POP3 (Post Office Protocol)** – Retrieves mail, downloads locally (port 110, 995)
-- **SPF, DKIM, DMARC** – Email authentication and anti-spoofing
+### Foundational Labs (Theory & Basics)
+- **Markdown**
+- **HTML**
+- **Clients and Servers**
+- **GitHub** (the labs and docs setup here)
+- **SSH Server**
+- **UFW Host Firewall**
+- **Linux Commands**
 
-### Web
+### Raspberry Pi Setup
+- **Image** (noobs/kali)
+- **Wifi**
+- **Power, Cables, Pins, etc**
 
-- **HTTP/HTTPS** – Web traffic (port 80, 443)
-- **TLS/SSL** – Encryption layer for HTTPS and other protocols
+### Core Network Services (Protocol Deep Dives)
+- **Time (NTP):** Synchronizes clocks across devices; critical for logs, auth, certs
+- **Name Resolution:**
+    - **DNS (Domain Name System):** Translates names to IPs
+    - **mDNS (Multicast DNS):** Local network discovery (.local addresses)
+- **IP Address Assignment:**
+    - **DHCP:** Assigns IPs, gateways, DNS to clients
+    - **APIPA:** Self-assigned 169.254.x.x when DHCP fails
+- **Email:**
+    - **SMTP:** Sends mail between servers (port 25, 587)
+    - **IMAP:** Retrieves mail, keeps on server (port 143, 993)
+    - **POP3:** Retrieves mail, downloads locally (port 110, 995)
+    - **SPF, DKIM, DMARC:** Email authentication and anti-spoofing
+- **Web:**
+    - **HTTP/HTTPS:** Web traffic (port 80, 443)
+    - **TLS/SSL:** Encryption layer for HTTPS and other protocols
+- **File Transfer:**
+    - **FTP/SFTP:** File transfers (port 21 / 22)
+    - **SCP:** Secure copy over SSH
+    - **SMB/CIFS:** Windows file sharing (port 445)
+    - **NFS:** Unix/Linux file sharing
+- **Remote Access:**
+    - **SSH:** Encrypted remote terminal (port 22)
+    - **RDP:** Windows remote GUI (port 3389)
+    - **VNC:** Cross-platform remote desktop
+- **Directory & Authentication:**
+    - **LDAP:** Directory lookups, user/group info
+    - **Active Directory:** Microsoft's LDAP + Kerberos implementation
+    - **Kerberos:** Ticket-based authentication
+    - **RADIUS:** Network access authentication (WiFi, VPN)
+- **Network Management:**
+    - **SNMP:** Monitor and manage network devices
+    - **Syslog:** Centralized logging (port 514)
+    - **ICMP:** Ping, traceroute, network diagnostics
+- **Database:**
+    - **MySQL/MariaDB** (Port 3306)
+    - **PostgreSQL** (Port 5432)
+    - **MongoDB** (Port 27017)
+    - **Redis** (Port 6379)
 
-### File Transfer
+### Python Labs
+- **Update pip**
+- **git clone**
+- **venv**
+- **File Encryptor**
+- **pdf2text**
+- **pirategems**
+- **Python Book**
 
-- **FTP/SFTP** – File transfers (port 21 / 22)
-- **SCP** – Secure copy over SSH
-- **SMB/CIFS** – Windows file sharing (port 445)
-- **NFS** – Unix/Linux file sharing
+### AI Usage (Planned Projects)
+- **Custom GPT**
+- **Gemini Gem**
+- **Claude Project + Skill**
+- **NotebookLM Podcast**
+- **Rent GPU Hugging Face, Photo Shoot**
+- **Create Code Page Using AI**
 
-### Remote Access
+### Docker & Infrastructure
+- **Basic Docker Container**
+- **Uptime Kuma** – Self-hosted uptime monitoring
+- **AdGuard Home** – Network-wide ad blocking and DNS
+- **Terraform Basic VM**
+- **Terraform deploy to AWS/Azure free tier**
+- **GitHub Actions CI/CD pipeline**
+- **Deploy container to AWS ECS or Azure Container Instances**
 
-- **SSH (Secure Shell)** – Encrypted remote terminal (port 22)
-- **RDP (Remote Desktop Protocol)** – Windows remote GUI (port 3389)
-- **VNC** – Cross-platform remote desktop
+### Monitoring & Visibility
+- **Log locations**
+- **tcpdump**
+- **Wireshark**
+- **Suricata**
+- **Wazuh**
 
-### Directory & Authentication
+### Network Security & Pentesting
+- **DVWA** (Damn Vulnerable Web Application)
+- **Juice Shop**
+- **Fing**
+- **Angry IP Scanner**
+- **Nmap + Zenmap**
+- **arp-scan**
+- **Netbox / Draw.io**
+- **Nikto**
+- **WPScan**
+- **ffuf**
+- **SQLMap**
+- **Burp Suite**
 
-- **LDAP (Lightweight Directory Access Protocol)** – Directory lookups, user/group info
-- **Active Directory** – Microsoft's LDAP + Kerberos implementation
-- **Kerberos** – Ticket-based authentication
-- **RADIUS** – Network access authentication (WiFi, VPN)
-
-### Network Management
-
-- **SNMP (Simple Network Management Protocol)** – Monitor and manage network devices
-- **Syslog** – Centralized logging (port 514)
-- **ICMP** – Ping, traceroute, network diagnostics
-
-### Database
-
-- **MySQL/MariaDB** – Port 3306
-- **PostgreSQL** – Port 5432
-- **MongoDB** – Port 27017
-- **Redis** – Port 6379
-
-## Python Labs
-
-- Update pip
-- git clone
-- venv
-- File Encryptor
-- pdf2text
-- pirategems
-- Python Book
-
-## GitHub Labs
-
-- GitHub simple docs in markdown
-- git scm basics
-- Collaboration
-
-## AI Usage Labs
-
-- Custom GPT
-- Gemini Gem
-- Claude Project + Skill
-- NotebookLM
-- NotebookLM Podcast
-- Rent GPU Hugging Face, Photo Shoot
-- Create Code Page Using AI
-
-
-## Docker Labs
-
-- Basic Docker Container
-- Uptime Kuma – Self-hosted uptime monitoring
-- AdGuard Home – Network-wide ad blocking and DNS
-
-## Visibility Labs
-
-- Log locations
-- tcpdump
-- Wireshark
-- Suricata
-- Wazuh
-
-## Network Security Labs
-
-- DVWA
-- Juice Shop
-- Fing
-- Angry IP Scanner
-- Nmap + Zenmap
-- arp-scan
-- Netbox / Draw.io
-- Nikto
-- WPScan
-- ffuf
-- SQLMap
-- Burp Suite
-
-## DevOps Labs (part 1)
-
-- Netlify.app the code page with GitHub trigger
-- Hugo Local Site to GitHub, Netlify
-- Domain Name + Hugo
-- OWASP ZAP or Nikto to scan DVWA
-
-## DevOps Labs (part 2)
-
-- Terraform Basic VM
-- Terraform deploy to AWS/Azure free tier
-- GitHub Actions CI/CD pipeline
-- Deploy container to AWS ECS or Azure Container Instances
-
-
-## Cloud Labs (Free Tier)
-
-### AWS Free Tier
-
+### Cloud Labs (Free Tier)
+#### AWS Free Tier
 - Create IAM users, groups, roles, policies
 - Launch EC2 instance + SSH access
 - Security Groups – inbound/outbound rules
@@ -165,8 +172,7 @@ Understanding the protocols that make everything work.
 - AWS CLI setup and usage
 - Lambda function – trigger from S3 or API Gateway
 
-### Azure Free Tier
-
+#### Azure Free Tier
 - Azure Portal navigation
 - Create VM + Network Security Groups
 - Azure Active Directory basics
@@ -175,52 +181,46 @@ Understanding the protocols that make everything work.
 - Azure CLI / Cloud Shell
 - Azure Functions
 
-### GCP Free Tier
-
+#### GCP Free Tier
 - Compute Engine e2-micro instance
 - Cloud Storage buckets
 - IAM and service accounts
 - Cloud Shell
 
-### Cloud Security Labs
+#### Cloud Security
+- **Prowler** – AWS security auditing
+- **ScoutSuite** – Multi-cloud security auditing
+- **Checkov** – IaC security scanning
+- **Trivy** – Container and IaC vulnerability scanning
+- **AWS Config** rules for compliance
+- **Secrets Manager / Key Vault basics**
 
-- Prowler – AWS security auditing
-- ScoutSuite – Multi-cloud security auditing
-- Checkov – IaC security scanning
-- Trivy – Container and IaC vulnerability scanning
-- AWS Config rules for compliance
-- Secrets Manager / Key Vault basics
-
-
+---
 
 ## Certifications
 
-Generally you get foundations, then specialize in specific vendors/products afterwards.  Certs "expire" but are easy to renew.    I have 31 certifications.   Far more than a degree, the certs opened doors.
+Generally you get foundations, then specialize in specific vendors/products afterwards. Certs "expire" but are easy to renew.
 
 ### Entry Level (Start Here)
-
-- **AWS Cloud Practitioner (CLF-C02)** – Cloud fundamentals
-- **Azure Fundamentals (AZ-900)** – Microsoft cloud basics
-- **LPI Linux Essentials** – Linux basics (free exam objectives)
+- **AWS Cloud Practitioner** – Cloud fundamentals
+- **Azure Fundamentals** (AZ-900) – Microsoft cloud basics
+- **LPI Linux Essentials** – Linux basics
 - **CompTIA A+** – IT fundamentals, hardware, troubleshooting
 - **CompTIA Network+** – Networking concepts, protocols, infrastructure
 
 ### Security Foundations
-
 - **CompTIA Security+** – Industry standard entry security cert
 - **CompTIA Linux+** – Deeper Linux administration
-- **Cisco Certified Support Technician (CCST) Cybersecurity** – Entry-level Cisco path
+- **Cisco CCST Cybersecurity** – Entry-level Cisco path
 
 ### Intermediate Security
-
 - **CompTIA CySA+** – Blue team, SOC analyst focus
 - **CompTIA PenTest+** – Offensive security basics
 - **AWS Security Specialty** – Cloud security
-- **Azure Security Engineer (AZ-500)** – Microsoft security
+- **Azure Security Engineer** (AZ-500) – Microsoft security
 - **Cisco CyberOps Associate** – SOC and defense
 
-### Suggested Path
-
-1. Network+ → Security+ → CySA+ (defensive track)
-2. Network+ → Security+ → PenTest+ → OSCP (offensive track)
-3. AWS Cloud Practitioner → AWS Security Specialty (cloud track)
+### Suggested Paths
+1.  **Defensive:** Network+ → Security+ → CySA+
+2.  **Offensive:** Network+ → Security+ → PenTest+ → OSCP
+3.  **Cloud:** AWS Cloud Practitioner → AWS Security Specialty

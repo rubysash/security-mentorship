@@ -11,6 +11,8 @@ showTableOfContents: true
 
 By the end of this lab you will have a live website on the internet, auto-deploying from GitHub, optionally on your own domain with HTTPS --for free.
 
+![Static Site Hosting Diagram](static-site-hosting-diagram.jpg)
+
 ## Prerequisites
 
 - A computer with a web browser
@@ -22,7 +24,7 @@ Static hosting is the simplest form of deployment, and it's everywhere.  Landing
 
 ## 1. Think of What to Put Online
 
-Nothing wrong with using AI to help you plan out something useful.  [Gemini](https://gemini.google.com), [ChatGPT](https://chatgpt.com), [Grok](https://grok.com/), [Claude](https://claude.ai), [Manus](https://manus.com), etc.  Take your pick.
+Nothing wrong with using AI to help you plan out something useful.  [https://gemini.google.com](https://gemini.google.com), [https://chatgpt.com](https://chatgpt.com), [https://grok.com/](https://grok.com/), [https://claude.ai](https://claude.ai), [https://manus.com](https://manus.com), etc.  Take your pick.
 
 Thinking (and now augmented thinking) is the most important part of anything.  What does a month, a year, 10 years benefit of this thing provide me or provide the world?
 
@@ -46,7 +48,7 @@ projects/resume/index.html
 projects/resume/style.css
 ```
 
-For example [Google AI Studio](https://aistudio.google.com), [Lovable](https://lovable.dev/), and [Claude](https://claude.ai) can all make beautiful websites.  AI Studio comes with Gemini and is free to use --great for quick prototyping.
+For example [https://aistudio.google.com](https://aistudio.google.com), [https://lovable.dev/](https://lovable.dev/), and [https://claude.ai](https://claude.ai) can all make beautiful websites.  AI Studio comes with Gemini and is free to use --great for quick prototyping.
 
 > **Tip:** When prompting the AI, be specific.  Instead of "make me a resume site" try "Create a single-page responsive resume website for a cybersecurity analyst. Use a clean dark theme with separate style.css. Include sections for summary, skills, experience, certifications, and contact."
 
@@ -66,13 +68,13 @@ You need to edit your coded object somehow in the future.  There are many option
 
 ### Notepad++
 
-[Download Notepad++](https://notepad-plus-plus.org/downloads/)
+[https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/)
 
 You are hard core, stubborn and refuse to learn new tools.  This option is for you.
 
 ### Visual Studio Code
 
-[Download VS Code](https://code.visualstudio.com/download)
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
 If you want to learn a bit about code, useful coding and development tools, and have plugins to assist you.  If it's in a folder called projects/resume --you would "open the folder" in Visual Studio Code.  This allows you to see and make minor changes.  I use Visual Studio Code and combine it with Claude Code to edit my projects now.
 
@@ -88,13 +90,19 @@ If you are saving money nearly all LLMs now have project spaces, customGPT, etc.
 
 ### Claude Code
 
-[Install Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
+[https://docs.anthropic.com/en/docs/claude-code/overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 You can go to the CLI at your project folder and type `claude` if you've installed Claude Code, and can further edit your project using Claude.  Claude Code has replaced all of my other tools for serious coding work.  Nothing compares to its power.  The only limit is the cost and on the Pro plan I don't run out of tokens or wait.  The basic plan is good enough for most.
 
-## 4. Setup GitHub Account
+### Also: Gemini CLI
 
-[GitHub](https://github.com/) --Sign up if you don't have an account.
+[https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
+
+If you are in the Google ecosystem, the Gemini CLI is a powerful alternative. It allows you to leverage the massive context window of Gemini 1.5 Pro directly from your terminal. It's excellent for analyzing large codebases or generating complex deployment scripts while staying in your flow.
+
+## Setup GitHub Account
+
+[https://github.com/](https://github.com/) --Sign up if you don't have an account.
 
 GitHub is where the files live, and where backups and revisions are done.  This is version control --every change you make is tracked and reversible.  Every tech company uses it or something like it (GitLab, Bitbucket).  Getting comfortable with GitHub is non-negotiable for security/DevOps roles.
 
@@ -121,7 +129,7 @@ GitHub is where the files live, and where backups and revisions are done.  This 
 
 ## 5. Connect GitHub to Netlify
 
-[Netlify](https://app.netlify.com/) --Sign up with your GitHub account.
+[https://app.netlify.com/](https://app.netlify.com/) --Sign up with your GitHub account.
 
 Netlify is a CDN (Content Delivery Network), and much more.  It will monitor GitHub for changes and auto-publish to the CDN.  This is a CI/CD pipeline --Continuous Integration / Continuous Deployment.  You push code, it goes live automatically.  That concept is the backbone of DevOps.
 
@@ -156,7 +164,7 @@ This step costs ~$10/year for a domain.  Skip it if you're just practicing.
 
 ### Buy a Domain on Cloudflare
 
-[Cloudflare Dashboard](https://dash.cloudflare.com/) --Sign up if you don't have an account.
+[https://dash.cloudflare.com/](https://dash.cloudflare.com/) --Sign up if you don't have an account.
 
 Use Cloudflare --not GoDaddy, Namecheap, 1&1, or anything else.  Cloudflare sells domains at cost (no markup), includes free DNS, free CDN, free DDoS protection, and free SSL.  There is no reason to use anyone else for registration.
 
@@ -177,7 +185,7 @@ Add these two records in the Cloudflare DNS dashboard for your domain:
 
 ### Netlify Domain Settings
 
-In [Netlify](https://app.netlify.com/):
+In [https://app.netlify.com/](https://app.netlify.com/):
 
 - Go to your **Project** > **Domain management**
 - Click **Add a domain** and enter your custom domain
