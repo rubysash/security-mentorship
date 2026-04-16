@@ -20,7 +20,7 @@ By the end of this lab, you will have established an automated "inbound" job fun
 - A completed technical lab from this repository to use as "Experience."
 
 ## Why This Matters
-The traditional "apply and wait" method is dead. Modern recruitment is driven by **ATS (Applicant Tracking Systems)** and **active candidate filters**. This protocol reverses the flow: instead of you hunting for jobs, you make your profile so "active" and "relevant" that recruiters are forced to hunt for *you*.
+The traditional "apply and wait" method is dead. Modern recruitment is driven by **ATS (Applicant Tracking Systems)** and **active candidate filters**. This protocol reverses the flow: instead of you hunting for jobs, you make your profile so "active" and "relevant" that recruiters are forced to hunt for *you*.    This allows you to get 50-100 recruiters actively looking to place you, vs you begging 50-100 recruiters to look at your resume.
 
 ---
 
@@ -38,6 +38,21 @@ Use an LLM (Gemini, Claude, or ChatGPT) to bridge the gap between your current s
     > "Act as a Senior Technical Recruiter. Based on the job description for [Target Title], write a resume for an individual with [2-10] years of experience. Focus on specific labs, projects, and knowledge areas they should have mastered. Use these keywords for ATS optimization."
 *   **The "Experience" Hack:** If you have no professional experience, list your completed labs as "Technical Projects" or "Practical Experience." 
 *   **The "Certification" Hack:** If you aren't certified yet, add: *"Studying for [CompTIA Security+/AWS CCP] Certification"* to ensure your resume hits the keyword filters.
+
+## Honesty
+
+Chicken and the egg?   Need experience to get a job, but don't have the experience to make a proper resume?  Don't lie.  Do this instead:
+
+- Identify what the resume created above says you should know
+- Do labs on those topics exactly.   Figure it out.
+- Watch udemy courses (free through the library) on the topic
+- Study for and pass the certs they are talking about.
+
+You don't have to have it all done today, but make a daily action plan to align the real you with the resume you are "fishing" with.    It takes a month at least to get through the interview process, onboarding, etc.  Sometimes it takes 2 or 3 months before you do anything.     You have this timeline to skill up.   If you don't have the skills, your job becomes getting them.   
+
+Do the exact labs for things that the job description wants you to know.   Create your https://github.com account and start documenting what you learn.   
+
+I.T. Work is NOT for lazy people.   If you game all day, and expect to lie your way to a position, you will get blackballed - don't do it.    With that said, you are given a few months to learn and most jobs have very specialized skills.  So if you say it on your resume, your job is to be it for real.
 
 ## Set Up the Automated Gatekeeper
 Recruiters will begin emailing you. You need to filter for the best matches automatically.
