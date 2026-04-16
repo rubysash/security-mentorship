@@ -1,5 +1,5 @@
 ---
-title: "Mastering the Gemini CLI: AI-Powered Engineering"
+title: "Beginner Gemini CLI: AI-Powered Engineering"
 date: 2026-04-04
 description: "Install, configure, and use the Gemini CLI to plan projects, manage environments, and automate tasks like website screenshotting."
 tags: ["ai-usage", "gemini-cli", "automation", "python", "cli"]
@@ -142,7 +142,7 @@ python3 screenshot.py [https://google.com](https://google.com)
 
 ---
 
-## Mastering CLI Memory
+## CLI Memory
 The Gemini CLI uses `GEMINI.md` files to remember your rules and preferences. You can edit these at different levels:
 
 *   **Global Memory:** `~/.gemini/GEMINI.md` (Rules for every project).

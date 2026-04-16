@@ -35,7 +35,7 @@ Use an LLM (Gemini, Claude, or ChatGPT) to bridge the gap between your current s
 
 *   **Determine Your Tier:** Based on your actual hands-on lab time and aptitude, decide if you are a "2-year" (Junior), "5-year" (Intermediate) or "10-year" (Senior) candidate.
 *   **The AI Prompt:** 
-    > "Act as a Senior Technical Recruiter. Based on the job description for [Target Title], write a resume for an individual with [2-10] years of experience. Focus on specific labs, projects, and knowledge areas they should have mastered. Use these keywords for ATS optimization."
+    > "Act as a Senior Technical Recruiter, that knows if a resume matches the job description provided, for [Target Title]. Based on the job description for [Target Title], write a resume for an individual with [2-10] years of experience. Focus on specific labs, projects, and knowledge areas they should have mastered. Use these keywords for ATS optimization.   Here is the job description [paste it]"
 *   **The "Experience" Hack:** If you have no professional experience, list your completed labs as "Technical Projects" or "Practical Experience." 
 *   **The "Certification" Hack:** If you aren't certified yet, add: *"Studying for [CompTIA Security+/AWS CCP] Certification"* to ensure your resume hits the keyword filters.
 

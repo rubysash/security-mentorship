@@ -83,7 +83,7 @@ The project is designed to support various career trajectories by combining foun
   - **Lists:** Use bullet points for lists. Only use numbered lists within a section if a strict technical sequence is required (e.g., sequential terminal commands).
   - **Hyperlinks:** Every hyperlink MUST include the entire full URL as the link text. Example: `[https://google.com](https://google.com)`. Never use descriptive text like `[Google](https://google.com)`.
   - **Placeholders:** Use `<ALL_CAPS_WITH_UNDERSCORES>` for user-specific placeholders. Never use `example.com` or similar as a placeholder destination.
-  - **NO ICONS:** Never include icons (emojis, etc.) in any document unless explicitly asked to do so by the user.
+  - **AVOID ICONS:** Never include icons (emojis, etc.) in any document unless explicitly asked to do so by the user with exception of ✅ and ❌.
 - **Visuals:**
   - **Location:** All images MUST be stored in the same folder as the lab's `index.md`.
 - **Featured Image:** The main lab image MUST be named `featured.ext` (supported extensions: `.svg`, `.png`, `.jpg`, `.gif`, `.webp`).
@@ -101,3 +101,4 @@ The project is designed to support various career trajectories by combining foun
 ### Updating Existing Labs
 1. **Verify:** Check if the tool or service (e.g., Netlify UI, AWS Console) has changed.
 2. **Refine:** Improve clarity based on common points of confusion.
+
