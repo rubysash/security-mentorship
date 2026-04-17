@@ -17,6 +17,8 @@ We are going to cover Google AI ecosystem components, and implementation strateg
 * Chromebook Offers: Many new Chromebooks include 12 months of Google One AI Premium at no cost.
 * Education Access: Gemini is often available at no additional cost for students through institutional Workspace for Education accounts.
 
+[https://github.com/google-gemini/gemini-cli/discussions/22970](https://github.com/google-gemini/gemini-cli/discussions/22970) for pricing changes as of March 25 free tier now limited to Flash, and pro is restricted to paid accounts.    They are recommending API key for unrestricted use.   Pricing, free tier, and being part of the google ecosystem are what makes this so appealling, so possibly [https://opencode.ai/](https://opencode.ai/), or even OpenClaw are the next paths worth exploring.
+
 ## Privacy
 
 Privacy we hope for, is not really the privacy we get.    You can hope for better privacy with the settings below:

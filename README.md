@@ -8,6 +8,7 @@ This is a sampling, it may not be updated with the latest labs.
 
 ```text
 security-mentorship/
+├── certifications/             # Vendor paths, salary data, and roadmap
 ├── labs/                       # Hands-on tutorials (organized by category)
 │   ├── ai-usage/               # LLMs, prompting, AI-assisted coding, CLIs
 │   ├── cloud/                  # AWS, Azure, GCP labs
@@ -204,28 +205,6 @@ This section contains all originally planned labs, sorted by category of things 
 
 ## Certifications
 
-Generally you get foundations, then specialize in specific vendors/products afterwards. Certs "expire" but are easy to renew.
+Generally you get foundations, then specialize in specific vendors/products afterwards. See the full roadmap and vendor paths here:
 
-### Entry Level (Start Here)
-- **AWS Cloud Practitioner** – Cloud fundamentals
-- **Azure Fundamentals** (AZ-900) – Microsoft cloud basics
-- **LPI Linux Essentials** – Linux basics
-- **CompTIA A+** – IT fundamentals, hardware, troubleshooting
-- **CompTIA Network+** – Networking concepts, protocols, infrastructure
-
-### Security Foundations
-- **CompTIA Security+** – Industry standard entry security cert
-- **CompTIA Linux+** – Deeper Linux administration
-- **Cisco CCST Cybersecurity** – Entry-level Cisco path
-
-### Intermediate Security
-- **CompTIA CySA+** – Blue team, SOC analyst focus
-- **CompTIA PenTest+** – Offensive security basics
-- **AWS Security Specialty** – Cloud security
-- **Azure Security Engineer** (AZ-500) – Microsoft security
-- **Cisco CyberOps Associate** – SOC and defense
-
-### Suggested Paths
-1.  **Defensive:** Network+ → Security+ → CySA+
-2.  **Offensive:** Network+ → Security+ → PenTest+ → OSCP
-3.  **Cloud:** AWS Cloud Practitioner → AWS Security Specialty
+*   **Certification Roadmap:** [certifications/index.md](certifications/index.md)
