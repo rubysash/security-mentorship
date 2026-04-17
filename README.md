@@ -35,24 +35,31 @@ security-mentorship/
 ## Active Labs (Completed)
 
 ### Foundational
-*   **Networking Foundations:** [labs/foundational/networking-fundamentals/index.md](labs/foundational/networking-fundamentals/index.md) (OSI Model, TCP Handshake, Ports).
-*   **Linux Foundations: The Filesystem:** [labs/foundational/linux-filesystem-basics/index.md](labs/foundational/linux-filesystem-basics/index.md).
-*   **Linux Foundations: The CLI:** [labs/foundational/linux-cli/index.md](labs/foundational/linux-cli/index.md) (Debian & RedHat cheatsheet).
-*   **Git Foundations: Version Control:** [labs/foundational/git-version-control/index.md](labs/foundational/git-version-control/index.md).
+*   **AI Usage Foundations: Power User Edition:** [labs/foundational/ai-usage-fundamentals/index.md](labs/foundational/ai-usage-fundamentals/index.md)
+*   **Cloud Foundations:** [labs/foundational/cloud-fundamentals/index.md](labs/foundational/cloud-fundamentals/index.md)
+*   **DevOps Foundations:** [labs/foundational/devops-fundamentals/index.md](labs/foundational/devops-fundamentals/index.md)
+*   **Git Foundations: Version Control:** [labs/foundational/git-version-control/index.md](labs/foundational/git-version-control/index.md)
+*   **Linux Foundations: The Command Line (CLI):** [labs/foundational/linux-cli/index.md](labs/foundational/linux-cli/index.md)
+*   **Linux Foundations: The Filesystem:** [labs/foundational/linux-filesystem-basics/index.md](labs/foundational/linux-filesystem-basics/index.md)
+*   **Networking Foundations:** [labs/foundational/networking-fundamentals/index.md](labs/foundational/networking-fundamentals/index.md)
+*   **Security Foundations:** [labs/foundational/security-fundamentals/index.md](labs/foundational/security-fundamentals/index.md)
 
 ### AI Usage
-*   **Mastering the Gemini CLI:** [labs/ai-usage/gemini-cli/index.md](labs/ai-usage/gemini-cli/index.md) (Installation, Venv, AI-driven scripts).
-*   **Rapid Website Prototyping & Sales:** [labs/ai-usage/aistudio-website/index.md](labs/ai-usage/aistudio-website/index.md).
-*   **AI Usage Foundations: Power User Edition:** [labs/foundational/ai-usage-fundamentals/index.md](labs/foundational/ai-usage-fundamentals/index.md).
+*   **Beginner Gemini CLI: AI-Powered Engineering:** [labs/ai-usage/gemini-cli/index.md](labs/ai-usage/gemini-cli/index.md)
+*   **Gemini Ecosystem with Focus on Gemini CLI:** [labs/ai-usage/gemini-cli-lecture/index.md](labs/ai-usage/gemini-cli-lecture/index.md)
+*   **Rapid Website Prototyping and Sales with Google AI Studio:** [labs/ai-usage/aistudio-website/index.md](labs/ai-usage/aistudio-website/index.md)
 
 ### Network Security
-*   **Advanced Network Discovery & Diagramming:** [labs/network-security/home-network-discovery/index.md](labs/network-security/home-network-discovery/index.md) (Nmap, Masscan, AI JSON).
+*   **Advanced Network Discovery and Data-Driven Diagramming:** [labs/network-security/home-network-discovery/index.md](labs/network-security/home-network-discovery/index.md)
 
 ### DevOps
-*   **Static Hosting with GitHub and Netlify:** [labs/devops/static-hosting-netlify/index.md](labs/devops/static-hosting-netlify/index.md).
+*   **Static Hosting Using Github and Netlify:** [labs/devops/static-hosting-netlify/index.md](labs/devops/static-hosting-netlify/index.md)
 
 ### Job Hunting
-*   **The 'Recruit the Recruiter' Protocol:** [labs/job-hunting/recruit-the-recruiter/index.md](labs/job-hunting/recruit-the-recruiter/index.md).
+*   **The 'Recruit the Recruiter' Protocol:** [labs/job-hunting/recruit-the-recruiter/index.md](labs/job-hunting/recruit-the-recruiter/index.md)
+
+### Python
+*   **Python venv Tutorial:** [labs/python/python-venv/index.md](labs/python/python-venv/index.md)
 
 ---
 
@@ -67,7 +74,6 @@ This section contains all originally planned labs, sorted by category of things 
 - **GitHub** (the labs and docs setup here)
 - **SSH Server**
 - **UFW Host Firewall**
-- **Linux Commands**
 
 ### Raspberry Pi Setup
 - **Image** (noobs/kali)
@@ -103,7 +109,7 @@ This section contains all originally planned labs, sorted by category of things 
     - **LDAP:** Directory lookups, user/group info
     - **Active Directory:** Microsoft's LDAP + Kerberos implementation
     - **Kerberos:** Ticket-based authentication
-    - **RADIUS:** Network access authentication (WiFi, VPN)
+    - **RADIUS:** Network access authentication (WiFi, WiFi, VPN)
 - **Network Management:**
     - **SNMP:** Monitor and manage network devices
     - **Syslog:** Centralized logging (port 514)
@@ -117,7 +123,6 @@ This section contains all originally planned labs, sorted by category of things 
 ### Python Labs
 - **Update pip**
 - **git clone**
-- **venv**
 - **File Encryptor**
 - **pdf2text**
 - **pirategems**
