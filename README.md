@@ -48,10 +48,17 @@ security-mentorship/
 ### AI Usage
 *   **Beginner Gemini CLI: AI-Powered Engineering:** [labs/ai-usage/gemini-cli/index.md](labs/ai-usage/gemini-cli/index.md)
 *   **Gemini Ecosystem with Focus on Gemini CLI:** [labs/ai-usage/gemini-cli-lecture/index.md](labs/ai-usage/gemini-cli-lecture/index.md)
+*   **Prompting vs. Context Prompting:** [labs/ai-usage/prompting-vs-context/index.md](labs/ai-usage/prompting-vs-context/index.md)
 *   **Rapid Website Prototyping and Sales with Google AI Studio:** [labs/ai-usage/aistudio-website/index.md](labs/ai-usage/aistudio-website/index.md)
 
 ### Network Security
-*   **Advanced Network Discovery and Data-Driven Diagramming:** [labs/network-security/home-network-discovery/index.md](labs/network-security/home-network-discovery/index.md)
+*   **Home Network Pentest: The Professional Lifecycle:**
+    *   **Overview & Legal:** [labs/network-security/home-network-pentest/index.md](labs/network-security/home-network-pentest/index.md)
+    *   **Phase 1: Discovery:** [labs/network-security/home-network-pentest/phase-1-discovery/index.md](labs/network-security/home-network-pentest/phase-1-discovery/index.md)
+    *   **Phase 2: Enumeration:** [labs/network-security/home-network-pentest/phase-2-enumeration/index.md](labs/network-security/home-network-pentest/phase-2-enumeration/index.md)
+    *   **Phase 3: Vulnerability Research:** [labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md](labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md)
+    *   **Phase 4: Hardening:** [labs/network-security/home-network-pentest/phase-4-hardening/index.md](labs/network-security/home-network-pentest/phase-4-hardening/index.md)
+    *   **Phase 5: Reporting:** [labs/network-security/home-network-pentest/phase-5-reporting/index.md](labs/network-security/home-network-pentest/phase-5-reporting/index.md)
 
 ### DevOps
 *   **Static Hosting Using Github and Netlify:** [labs/devops/static-hosting-netlify/index.md](labs/devops/static-hosting-netlify/index.md)
@@ -131,7 +138,6 @@ This section contains all originally planned labs, sorted by category of things 
 
 ### AI Usage (Planned Projects)
 - **Custom GPT**
-- **Gemini Gem**
 - **Claude Project + Skill**
 - **NotebookLM Podcast**
 - **Rent GPU Hugging Face, Photo Shoot**
