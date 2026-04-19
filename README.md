@@ -53,12 +53,12 @@ security-mentorship/
 
 ### Network Security
 *   **Home Network Pentest: The Professional Lifecycle:**
-    *   **Overview & Legal:** [labs/network-security/home-network-pentest/index.md](labs/network-security/home-network-pentest/index.md)
-    *   **Phase 1: Discovery:** [labs/network-security/home-network-pentest/phase-1-discovery/index.md](labs/network-security/home-network-pentest/phase-1-discovery/index.md)
-    *   **Phase 2: Enumeration:** [labs/network-security/home-network-pentest/phase-2-enumeration/index.md](labs/network-security/home-network-pentest/phase-2-enumeration/index.md)
-    *   **Phase 3: Vulnerability Research:** [labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md](labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md)
-    *   **Phase 4: Hardening:** [labs/network-security/home-network-pentest/phase-4-hardening/index.md](labs/network-security/home-network-pentest/phase-4-hardening/index.md)
-    *   **Phase 5: Reporting:** [labs/network-security/home-network-pentest/phase-5-reporting/index.md](labs/network-security/home-network-pentest/phase-5-reporting/index.md)
+    *   **Overview & Legal:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/index.md)
+    *   **Phase 1: Discovery:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-1-discovery/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-1-discovery/index.md)
+    *   **Phase 2: Enumeration:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-2-enumeration/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-2-enumeration/index.md)
+    *   **Phase 3: Vulnerability Research:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-3-vulnerability-research/index.md)
+    *   **Phase 4: Hardening:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-4-hardening/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-4-hardening/index.md)
+    *   **Phase 5: Reporting:** [https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-5-reporting/index.md](https://github.com/rubysash/security-mentorship/blob/main/labs/network-security/home-network-pentest/phase-5-reporting/index.md)
 
 ### DevOps
 *   **Static Hosting Using Github and Netlify:** [labs/devops/static-hosting-netlify/index.md](labs/devops/static-hosting-netlify/index.md)
