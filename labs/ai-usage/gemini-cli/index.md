@@ -13,6 +13,14 @@ By the end of this lab, you will have installed the Gemini CLI, used it to archi
 
 **Note** you need a Google Account To authenticate your AI session.
 
+## What is Gemini-CLI?
+
+It can look at a folder, analyze all of the files and function like a custom AI (based on GEMINI.md instructions) for those files.    It can be used to write scripts or books, analyze log files, court cases, and do just about anything you can imagine an AI would do.   It does not create images, however, you can hook and call to external sources that gather data or create images for you.   It can call APIs, read websites, download files, and do anything you can imagine really.   
+  
+You can "train" it with one or more detailed skills that are specific actions it can follow.   It can use agents and mcps combined with real time decision making.    Typically this version of gemini cli requires constant steering.  It is not a completely autonomous AI.
+
+We are going to use it to write a simple script in this lab.
+
 ## Checklist
 
 Here is the TLDR version of what we are going to cover.
@@ -31,17 +39,19 @@ Here is the TLDR version of what we are going to cover.
 
 ## Install Prerequisites
 
-Node is required for Gemini, but we are going to do other work with it, so we'll install python too.
+Node is required for Gemini, but we are going to do other work with it, so we'll install python and git too.
 
 - **Node.js installed** (Required for npm): Download at [https://nodejs.org/](https://nodejs.org/).
 - **Python 3 installed** (For the project portion): Download at [https://www.python.org/downloads/](https://www.python.org/downloads/).  I suggest 3.13 because 3.14 does not have full support yet.
 - **GIT installed** (For revisions): Download at [https://git-scm.com](https://git-scm.com)  
 
+Git can be used for local revision and does not require a github account, but that is also worth learning if you work between multiple computers, or with multiple people on the same project.   We are going to use it for local snapshots in this lab.
+
 ---
 
 ## Python Environment
 
-In this lab we are going to use python to capture a screenshoot of a site.   To do that, we need a working environment for our python files, and then we'll use gemini to work with those files.
+In this lab we are going to use python to capture a screenshoot of a site and gemini to create the scripts.   To do that, we need a working environment for our python files, and then we'll use gemini to work with those files.
 
 We'll use the `venv` module to create the virtual environment called `site-screenshot` that stores our scripts and modules for this program.
 
@@ -273,6 +283,7 @@ Resume exactly where you left off:
 *   **Architectural Planning:** Using AI to design project structures before coding.
 *   **Environment Management:** Setting up a workspace where the project folder **is** the virtual environment.
 *   **Contextual Memory:** Using `GEMINI.md` to persist engineering standards.
+*   **Gemini CLI Powered Workflow**: Using gemini-cli to plan and create.
 
 ---
 ## References
