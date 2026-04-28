@@ -1,0 +1,34 @@
+# Git/Config
+.git/
+.gitignore
+.claudeignore
+GEMINI.md
+
+# Virtual Environments
+Lib/
+Scripts/
+Include/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Media & Binary Assets
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.pdf
+*.zip
+*.tar.gz
+
+# Security Sensitive
+*.key
+*.pem
+.env
+secrets.json
+*.pcap
+*.pcapng
+*.nmap

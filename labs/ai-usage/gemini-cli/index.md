@@ -6,71 +6,41 @@ tags: ["ai-usage", "gemini-cli", "automation", "python", "cli"]
 showTableOfContents: true
 ---
 
-# Mastering the Gemini CLI: AI-Powered Engineering
+# Gemini CLI: Basic Python Use Example
 
 ## Objective
 By the end of this lab, you will have installed the Gemini CLI, used it to architect a project plan, and developed a functional Python script to capture website screenshots—all directed from your terminal.
 
-## Legal & Ethical Disclaimer
-**FOR EDUCATIONAL USE ONLY.** The Gemini CLI is a powerful tool capable of modifying your filesystem and executing commands. Always review AI-generated code and shell commands before execution. Only use the screenshot script on websites you own or for which you have explicit permission to capture data.
+**Note** you need a Google Account To authenticate your AI session.
 
-## Prerequisites
 
-Node is required for Gemini, but we are going to do other work with it, so install python too.
+## Checklist
+
+Here is the TLDR version of what we are going to do.
+
+- Install Prequisites
+- Setup python Environment
+- Install gemini-cli
+- Authenticate
+- /init
+- Create a Project Plan Using Gemini
+- Work with Gemini to Execute the Plan
+
+
+## Install Prerequisites
+
+Node is required for Gemini, but we are going to do other work with it, so we'll install python too.
 
 - **Node.js installed** (Required for npm): Download at [https://nodejs.org/](https://nodejs.org/).
-- **A Google Account:** To authenticate your AI session.
-- **Python 3 installed** (For the project portion): Download at [https://www.python.org/downloads/](https://www.python.org/downloads/).
-
-### Authentication and Tier Options
-The Gemini CLI offers two ways to connect. Your choice determines how your data is handled and what limits apply.
-
-*   **Option 1: Gemini Advanced Subscription (No API Key Required)**
-    If you have a paid Gemini Advanced subscription ($20/mo), the CLI can authenticate directly through your browser. 
-    *   **Cost:** Flat $20/mo.  includes 2TB storage, and other parts of Google Ecosystem
-    *   **Privacy:** Generally follows the consumer terms of service. Great for personal use and standard project work.
-
-*   **Option 2: Google AI Studio (API Key)**
-    The professional developer portal allows for fine-grained control over data and costs. Obtain your key at [https://aistudio.google.com](https://aistudio.google.com).
-
-| Feature | Free Tier | Paid Tier (Pay-As-You-Go) |
-| :--- | :--- | :--- |
-| **Model Training** | **Yes.** Google uses your data to improve models. | **No.** Your data is never used for training. |
-| **Human Review** | **Possible.** Data may be read by human annotators. | **No.** Enterprise-grade privacy protections. |
-| **Cost** | $0 (Generous free limits). | Charged per 1M tokens (very inexpensive). |
-| **Rate Limits** | Lower (e.g., 15 RPM for Pro). | Significantly higher for production use. |
-
-**Important Security Verification:**
-You can verify these policies and check current pricing at these official links:
-- **Pricing & Tier Comparison:** [https://ai.google.dev/pricing](https://ai.google.dev/pricing)
-- **Data Privacy & Usage Terms:** [https://ai.google.dev/gemini-api/terms#data-use](https://ai.google.dev/gemini-api/terms#data-use)
-
-> **Pro Tip:** For any work involving proprietary code, sensitive security findings, or PII (Personally Identifiable Information), you MUST use the **Paid Tier** to ensure your data remains private and is not used for model training and then... you must trust that Google will keep it private (lol)
+- **Python 3 installed** (For the project portion): Download at [https://www.python.org/downloads/](https://www.python.org/downloads/).  I suggest 3.13 because 3.14 does not have full support yet.
 
 ---
 
-## Installation and Initial Setup
+## Python Environment
 
-Install the Gemini CLI globally using npm:
+In this lab we are going to use python to capture a screenshoot of a site.   To do that, we need a working environment for our python files, and then we'll use gemini to work with those files.
 
-```bash
-npm install -g @google/gemini-cli@latest
-```
-
-### First Time Tests (The Sandbox)
-Before working on your real files, enter the sandbox mode to explore capabilities without risk:
-
-```bash
-gemini --sandbox
-```
-
----
-
-## Project Workflow: The Website Screenshot Tool
-We will use Gemini to help us plan and build a tool that takes a full-page screenshot of any URL.
-
-### Create the Workspace (The Environment)
-In this workflow, the project folder **is** the virtual environment. This keeps your tools and project files in a single, isolated unit.
+We'll use the `venv` module to create the virtual environment called `site-screenshot` that stores our scripts and modules for this program.
 
 ```bash
 # Create the environment folder
@@ -81,41 +51,91 @@ cd site-screenshot
 ```
 
 ### Activate and Plan
-Now, activate your environment and ask Gemini to design the architecture.
+Now, activate your environment so the modules you are instructed to install will be contained.
 
 ```bash
-# Activate (Linux/Pi/WSL)
+# Activate if (Linux/Pi/WSL)
 source bin/activate  
 
-# Activate (Windows PowerShell)
-# .\Scripts\Activate.ps1
+# Activate if (Windows PowerShell)
+Scripts\Activate
 ```
 
-### Run Gemini
+Your CLI will change to `(site-screenshot)`.    This is the **python** venv, and it's ready to run `gemini` cli on it.
+---
 
-In this folder, type:  `gemini` to start the gemini cli.
+## Install gemini-cli
 
-After it loads, issue a command and start working with it:
+If you have node installed, you can can install gemini-cli like this:
+
+```bash
+npm install -g @google/gemini-cli@latest
+```
+
+
+---
+
+
+
+## Run Gemini
+
+In this folder, type:  `gemini` to start the gemini cli.   It will ask for authorization before you can continue.
+
+## Authenticate
+
+This is pretty straight forward.  Your free google account will allow basic work.   You can purchase a subscription from [https://one.google.com/about/plans](https://one.google.com/about/plans) for about $21 a month for additional usage beyond the free tier.
+
+## /init and GEMINI.md
+
+typing `/init` in the cli will create a filed called "GEMINI.md" that contains the basic instructions for your project.  You can edit this and fine tune how the AI responds, thinks, and prioritizes and more.
+
+You can also create a `.geminiignore` file to tell gemini what to ignore.    Just list the files and directories like you would to ignore, using the same format as you might a `.gitignore`.
+
+The initial `/init` will create blank or generic files and you will need to edit them to your specific project needs.      `GEMINI.md` files are folder and sub folder specific, but also you can have a main `GEMINI.md` file for everything you do.   Each folder and subfolder can have specific gemini files as needed.  
+
+The Gemini CLI uses `GEMINI.md` files to remember your rules and preferences. You can edit these at different levels:
+
+*   **Global Memory:** `~/.gemini/GEMINI.md` (Rules for every project).
+*   **Project Root:** `./GEMINI.md` (Rules for the current repository).
+*   **Subdirectory:** `./src/GEMINI.md` (Rules specific to a folder).
+
+## Create a Project Plan
+
+If you try to ask gemini to boil the ocean, it will try.   However, if you spell it out exactly what you want it to do, it will perform much better for you.     I call these "Project Plans".   List out what you want the create, how it will work, limitations, how it looks, etc.    The more details you put into your project plan by thinking ahead - the better results you will get when you ask gemini to help you execute the plan.
+
+At a bare minimum, I would list the following:
+
+- Objectives
+- Limits
+- Examples
+- Input
+- Exact Output
+- Reference Material
+- GUI Design
+
+You get the idea - create a well thought out plan.     You can (and should) use gemini to help create your project plan.   
+
+**Example Prompt:**
+```bash
+I want to build a tool that takes a screenshot of a website. Create a comprehensive project plan for python 3.13 on debian, required libraries, and suggested file structure. Output this plan in a single block of markdown code and save it to project-plan.md.   Input will be a URL, and the output will be a screenshot of that URL saved to the /screenshots/ directory.   The gui will use pyqt that prompts for the URL and has a "capture" button.   We want modular design so that maintenance is easy.  For example, gui.py, main.py, url-grabber.py, logger.py and config.py
+```
+
+This is an example and how I start most of my projects.   THen I'll review the the `project-plan.md` and modify as needed before I even begin writing "code".  The project-plan.md is not a requirement, it's just something I do as I build any project.  Typically I'll build the plan, then revist the GEMINI.md file and update them base don the plan.
+
+### Update  GEMINI.md
+Now that you have a project plan, you can update your `GEMINI.md` file to set specific engineering standards for the AI agent to follow within this workspace if it's not to your liking.  Again, you can use gemini to update it's own files.  For example, if you were doing best practices in python, you might require PEP8, certain formatting, . 
 
 **Command:**
 ```bash
-I want to build a tool that takes a screenshot of a website. Create a comprehensive project plan including the best language, required libraries, and file structure. Output this plan in Markdown format and save it to project-plan.md.   This project will be in Python3 on my Raspberry Pi 4 which is running noobs.
-```
-
-### Establish Project Memory (GEMINI.md)
-Create a local `GEMINI.md` file to set specific engineering standards for the AI agent to follow within this workspace.
-
-**Command:**
-```bash
-Based on project-plan.md, create a GEMINI.md file for this repository. Include rules for using Playwright, a mandate for clean variable naming, and a requirement to include error handling in every script.
+Based on project-plan.md, update the GEMINI.md file for this project. Require PEP8 and add a requirement to include error handling in every script.
 ```
 
 ### Direct the Coding
-Tell Gemini to write the actual code based on the established plan and memory.
+We have an updated GEMINI.md, project-plan.md and are ready to tell Gemini to write the actual code based on the established plan and memory.
 
 **Command:**
 ```bash
-Write a Python script named screenshot.py based on our project-plan.md. Use Playwright to take a full-page screenshot of a URL passed as a command-line argument. Ensure it follows the rules in our local GEMINI.md.
+Write a Python script for our  based on our project-plan.md. Use Playwright to take a full-page screenshot of a URL passed as a command-line argument. Ensure it follows the rules in our local GEMINI.md.
 ```
 
 ### Project Structure
@@ -142,12 +162,7 @@ python3 screenshot.py [https://google.com](https://google.com)
 
 ---
 
-## CLI Memory
-The Gemini CLI uses `GEMINI.md` files to remember your rules and preferences. You can edit these at different levels:
 
-*   **Global Memory:** `~/.gemini/GEMINI.md` (Rules for every project).
-*   **Project Root:** `./GEMINI.md` (Rules for the current repository).
-*   **Subdirectory:** `./src/GEMINI.md` (Rules specific to a folder).
 
 ### Useful Memory Commands
 *   `/memory show` - View current memory.
@@ -188,15 +203,20 @@ Switch models for different tasks:
 
 ---
 
-## Learning Resources
-*   **Official CLI Reference:** [https://geminicli.com/docs/cli/cli-reference/](https://geminicli.com/docs/cli/cli-reference/)
-*   **Skills Getting Started:** [https://geminicli.com/docs/cli/tutorials/skills-getting-started/](https://geminicli.com/docs/cli/tutorials/skills-getting-started/)
-*   **Google AI Studio:** [https://aistudio.google.com](https://aistudio.google.com)
-
----
-
 ## What You Learned
 *   **CLI Integration:** Running AI agents natively in your terminal.
 *   **Architectural Planning:** Using AI to design project structures before coding.
 *   **Environment Management:** Setting up a workspace where the project folder **is** the virtual environment.
 *   **Contextual Memory:** Using `GEMINI.md` to persist engineering standards.
+
+---
+## References
+
+* **Pricing & Tier Comparison:** [https://ai.google.dev/pricing](https://ai.google.dev/pricing)
+* **Data Privacy & Usage Terms:** [https://ai.google.dev/gemini-api/terms#data-use](https://ai.google.dev/gemini-api/terms#data-use)
+
+*   **Official CLI Reference:** [https://geminicli.com/docs/cli/cli-reference/](https://geminicli.com/docs/cli/cli-reference/)
+*   **Skills Getting Started:** [https://geminicli.com/docs/cli/tutorials/skills-getting-started/](https://geminicli.com/docs/cli/tutorials/skills-getting-started/)
+*   **Google AI Studio:** [https://aistudio.google.com](https://aistudio.google.com)
+
+
